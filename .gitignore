@@ -1,0 +1,32 @@
+
+# Maven build output
+**/target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local configuration
+application-local.properties
+application-local.yml
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Temporary files
+*.tmp
+*.bak

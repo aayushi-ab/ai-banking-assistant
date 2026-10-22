@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <!-- Spring Boot parent -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.0.8</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+    <!-- Parent project details -->
+    <groupId>com.portfolio.banking</groupId>
+    <artifactId>ai-banking-assistant</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>AI Banking Assistant</name>
+    <description>
+        AI-powered banking assistant using Spring Boot
+        microservices and Spring AI
+    </description>
+
+    <!-- Child modules -->
+    <modules>
+        <module>customer-service</module>
+        <module>transaction-service</module>
+        <module>ai-orchestrator</module>
+        <module>api-gateway</module>
+    </modules>
+
+    <!-- Shared properties -->
+    <properties>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+</project>
